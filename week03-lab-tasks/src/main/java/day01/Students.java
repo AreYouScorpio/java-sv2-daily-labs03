@@ -6,25 +6,34 @@ import java.util.List;
 
 public class Students {
 
-    List<Integer> height = new ArrayList<>();
+
+    private List<Integer> heights = new ArrayList<>();
 
 
-//    List<Integer> height = Arrays.asList(3,5,7);
+    public void addHeigth(int height) {
+        heights.add(height);
+    }
 
 
-    public void addHeight(int height)
-    {
-        this.height.add(height);
-    };
+    public boolean isHeightsIncreasing() {
 
-public boolean isHeightsIncreasing(){
-    int counter=0;
-    int a= height.size();
-    for (int i=1; i<a ;i++) {
-        if (height.get(i)>height.get(i-1)) {
-            counter++;
+        int counter = 0;
+        int a = heights.size();
+
+
+        for (int i = 1; i < a; i++) {
+
+
+            if (heights.get(i) > heights.get(i - 1)) {
+                counter++;
+            }}
+
+
+            if (counter == heights.size()) {
+                return true;
+            } else {
+                return false;
+            }
         }
-    };
-    if (counter == height.size()) { return true;} else { return false;}
-}
-}
+
+    }
