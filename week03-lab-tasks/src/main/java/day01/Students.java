@@ -30,7 +30,7 @@ public class Students {
         }
 
 
-            if (counter == heights.size()) {
+            if (counter == heights.size()-1) {
                 return true;
             } else {
                 return false;
