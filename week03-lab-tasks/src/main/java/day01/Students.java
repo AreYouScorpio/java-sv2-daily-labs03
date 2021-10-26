@@ -16,25 +16,39 @@ public class Students {
 
     public boolean isHeightsIncreasing() {
 
-        int counter = 0;
+        // int counter = 0;
 
         int a = heights.size();
 
 
-        for (int i = 1; i < a; i++) {
+    /*    for (int i = 1; i < a; i++) {
 
 
             if (heights.get(i) > heights.get(i - 1)) {
+
                 counter++;
-            }else {counter = 0;}
-        }
-
-
-            if (counter == heights.size()-1) {
                 return true;
             } else {
                 return false;
             }
+*/
+
+
+
+                for (int i = 1; i < a; i++) {
+                    if (heights.get(i) <= heights.get(i - 1))
+                        return false;
+                }
+                return true;
+            }
+
+
+
+
         }
 
-    }
+
+
+
+
+
