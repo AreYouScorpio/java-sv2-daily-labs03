@@ -1,7 +1,6 @@
 package day01;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Students {
@@ -18,6 +17,7 @@ public class Students {
     public boolean isHeightsIncreasing() {
 
         int counter = 0;
+
         int a = heights.size();
 
 
@@ -26,7 +26,8 @@ public class Students {
 
             if (heights.get(i) > heights.get(i - 1)) {
                 counter++;
-            }}
+            }else {counter = 0;}
+        }
 
 
             if (counter == heights.size()) {

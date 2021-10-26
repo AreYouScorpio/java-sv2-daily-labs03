@@ -10,7 +10,7 @@ public class School {
     public static void main(String[] args) {
 
 
-        Scanner scanner = new  Scanner(System.in);
+        // Scanner scanner = new  Scanner(System.in);
 Students students = new Students();
 
 
@@ -19,7 +19,7 @@ students.addHeigth(165);
 students.addHeigth(170);
 
 
-        int height = scanner.nextInt();
+        // int height = scanner.nextInt();
 
 
 
