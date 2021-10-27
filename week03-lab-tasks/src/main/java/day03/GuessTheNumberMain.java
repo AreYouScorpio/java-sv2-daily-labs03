@@ -13,7 +13,7 @@ public class GuessTheNumberMain {
 
 
 
-        int hiddenNumber = randomHiddenNumber.nextInt(100);
+        int hiddenNumber = randomHiddenNumber.nextInt(101);
 
         guessTheNumber.setHiddenNumber(hiddenNumber);
 
