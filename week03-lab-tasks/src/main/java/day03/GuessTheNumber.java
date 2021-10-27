@@ -8,7 +8,9 @@ public class GuessTheNumber {
     private int tipp;
     private int hiddenNumber;
 
-
+    public void setHiddenNumber(int hiddenNumber) {
+        this.hiddenNumber = hiddenNumber;
+    }
 
     public int getTipp() {
 
@@ -24,8 +26,6 @@ public class GuessTheNumber {
                 System.out.println("Nem talált.\n");
             }
         }
-
-
         return hiddenNumber;
     }
 

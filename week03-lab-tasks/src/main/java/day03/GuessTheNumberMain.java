@@ -11,12 +11,17 @@ public class GuessTheNumberMain {
         Random randomHiddenNumber = new Random();
         GuessTheNumber guessTheNumber = new GuessTheNumber();
 
+
+
         int hiddenNumber = randomHiddenNumber.nextInt(100);
 
+        guessTheNumber.setHiddenNumber(hiddenNumber);
 
         System.out.println("Gondoltam egy számot, 6x tippelhetsz 1-100 között! \n ");
 
-        goodTipp=hiddenNumber.getTipp();
+        System.out.println(hiddenNumber);
+
+        goodTipp=guessTheNumber.getTipp();
 
         System.out.println("A jó szám" + goodTipp + " volt.");
 
