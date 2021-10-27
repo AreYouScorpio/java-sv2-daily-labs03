@@ -24,6 +24,8 @@ public class GuessTheNumber {
                 return hiddenNumber;
             } else {
                 System.out.println("Nem talált.\n");
+                if (tipp>hiddenNumber) {System.out.println("A szám kisebb ennél.");} else  {
+                    System.out.println("A szám nagyobb ennél.");}
             }
         }
         return hiddenNumber;
