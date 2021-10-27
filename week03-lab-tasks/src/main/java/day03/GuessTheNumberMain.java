@@ -19,7 +19,7 @@ public class GuessTheNumberMain {
 
         System.out.println("Gondoltam egy számot, 6x tippelhetsz 1-100 között! \n ");
 
-        System.out.println(hiddenNumber);
+        // System.out.println(hiddenNumber);
 
         goodTipp=guessTheNumber.getTipp();
 
