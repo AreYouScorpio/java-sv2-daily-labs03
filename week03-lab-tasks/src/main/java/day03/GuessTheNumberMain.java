@@ -9,8 +9,9 @@ public class GuessTheNumberMain {
         int goodTipp;
 
         Random randomHiddenNumber = new Random();
-        int hiddenNumber = randomHiddenNumber.nextInt(100);
+        GuessTheNumber guessTheNumber = new GuessTheNumber();
 
+        int hiddenNumber = randomHiddenNumber.nextInt(100);
 
 
         System.out.println("Gondoltam egy számot, 6x tippelhetsz 1-100 között! \n ");
