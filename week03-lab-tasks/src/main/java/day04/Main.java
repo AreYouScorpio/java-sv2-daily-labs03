@@ -7,12 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int[][] matrix = {{123},{0,0,0},{0,0,0}};
+        int[][] matrix = {{1, 2, 3},{0,0,0},{0,0,0}};
         MatrixOperations matrixOperations = new MatrixOperations();
         System.out.println(matrixOperations.isUpperTriangle(matrix));
 
     }
-
-    // private boolean isUpperTriangle(int[][] matrix) {
 
 }
